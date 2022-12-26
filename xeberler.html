@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xeber</title>
+    <style>
+        html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header hisse baslayir */
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #8A1538;
+    height: 110px;
+    color: rgb(216, 203, 203);
+    text-transform: capitalize;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.column {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 25px 300px;
+}
+
+a {
+    margin: 3%;
+    text-decoration: none;
+    color: rgb(216, 203, 203);
+    font-size: 18px;
+}
+
+a:hover {
+    color: rgb(44, 41, 41);
+}
+
+#img5 {
+    background-image: url(image/xeber.jpg);
+    height: 540px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 500px;
+}
+
+#xeber {
+    color: rgb(44, 41, 41);
+}
+
+.fifa {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+    .column {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .header {
+        height: 270px;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="fifa">fifa dünya çempionatı Qətər 2022</div>
+        <div class="column">
+            <a href="index.html">oyunlar</a>
+            <a href="xeberler.html" id="xeber">xəbərlər</a>
+            <a href="bolme.html">bölmə</a>
+            <a href="oyuncular.html">oyunçular</a>
+            <a href="statistika.html">statistika</a>
+            <a href="cedvel.html"> cədvəl</a>
+        </div>
+    </div>
+
+    <div id="img5"></div>
+</body>
+</html>

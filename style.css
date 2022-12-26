@@ -1,0 +1,140 @@
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header hisse baslayir */
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #8A1538;
+    height: 110px;
+    color: rgb(216, 203, 203);
+    text-transform: capitalize;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.column {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 25px 300px;
+    flex-direction: row;
+}
+
+a {
+    margin: 3%;
+    text-decoration: none;
+    color: rgb(216, 203, 203);
+    font-size: 18px;
+}
+
+a:hover {
+    color: rgb(44, 41, 41);
+}
+/* header hisse bitir */
+
+ /* fifa kubok sekili elave edildi */
+img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 950px;
+    width: 100%;
+    flex: 1 0 300px;
+}
+
+#oyu {
+    color:  rgb(44, 41, 41);
+}
+
+.oyunlar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bayraq {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+  
+}
+
+.sekil1 {
+    background-image: url(image/argentina.jpg);
+}
+.sekil2 {
+    background-image: url(image/meksika.jpg);
+}
+
+h3 {
+    padding: 15px;
+}
+
+#section {
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 400px;
+}
+
+#messi {
+    background-image: url(image/messi.png);
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+#raul {
+    background-image: url(image/raul.png);
+    height: 400px;
+    width: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hesab {
+    background-image: url(image/hesab.jpg);
+    height: 400px;
+    width: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fifa {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+    .column {
+        flex-direction: column;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .header {
+        height: 270px;
+    }
+    
+}
