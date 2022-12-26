@@ -46,7 +46,7 @@ a:hover {
 img {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 950px;
+    height: auto;
     width: 100%;
     flex: 1 0 300px;
 }
