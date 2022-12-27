@@ -1,223 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="az">
 <head>
-<title>Zeyd Aliyev</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-
-html, body {
-  scroll-behavior: smooth;
-}
-
-#hhbb:hover {
-    transform: scale(1.3);
-    transition: 1s;
-}
-
-#mrs:hover {
-    transform: scale(1.3);
-    transition: 1s;
-}
-
-.imgall {
-  transition: 1s;
-  transform: scale(0.9);
-}
-
-.imgall:hover {
-  transform: scale(1);
-}
-
-.tel {
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.tel:hover {
-  color: red;
-}
-
-.unvan {
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.unvan:hover {
-  color: red;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistika</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="w3-black">
+<body>
+    <div class="header">
+        <div>
+            <h2>ölkələr arası yüklərin daşınması xidməti</h2>
+        </div>
+        <div class="header2">
+            <a href="" id="ana">ana səhifə</a>
+            <a href="haqqimiz">haqqımızda</a>
+            <a href="yeni">yeniliklər</a>
+            <a href="elaqe">əlaqə</a>
+        </div>
+    </div>
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="zeyd.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>Ana Sehife</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>Haqqimda</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>Sekiller</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>Elaqe</p>
-  </a>
-</nav>
+    <img src="image/truck.jpg" alt="">
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Ana Sehife</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Haqqimda</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Sekiller</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Elaqe</a>
-  </div>
-</div>
+    <div>
+        <h1>
+            <span>Xidmətlərimiz</span>
+        </h1>
+    </div>
+    <div class="menyu">
+        <div class="qutu">
+            <div class="sekil sekil1"></div>
+            <div class="text">Avropa ölkələrinə xidmət</div>
+        </div>
+        <div class="qutu">
+            <div class="sekil sekil2"></div>
+            <div class="text">Konteynerlər ilə yüklərin daşınması</div> 
+        </div>
+        <div class="qutu">
+            <div class="sekil sekil3"></div>
+            <div class="text">Broker xidməti (Yüklərin rəsmiləşdirilməsi)</div>
+        </div>
+    </div>
+    <div class="menyu">
+        <div class="qutu">
+            <div class="sekil sekil4"></div>
+            <div class="text">Sığortalı CMR ilə yüklərin Daşınması</div>
+        </div>
+        <div class="qutu">
+            <div class="sekil sekil5"></div>
+            <div class="text">Kargo Xidməti</div>
+        </div>
+        <div class="qutu">
+            <div class="sekil sekil6"></div>
+            <div class="text">Avto ehtiyyat Hissələrinin satışı</div>
+        </div>
+    </div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Zeyd Aliyev.</h1>
-    <p>Sirin ve Decel usaq.</p>
-    <img  src="zeyd2.jpg" alt="boy" class="w3-image" width="992" height="708">
-  </header>
+    <h1>
+        <span>Üstünlüklərimiz</span>
+    </h1>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Haqqimda</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-      Men Aliyev Zeyd Habib oglu 15.01.2022. ci ilde Baki seherinde anadan olmusam. 
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">Menim Bacariqlarim</h3>
-    <p class="w3-wide">Evi Dagitmaq</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    <div class="footer">
+        <div class="item">
+            <div class="foto foto1"></div>
+            <div class="yazi">7/24 ƏLAQƏ</div>
+        </div>
+        <div class="item">
+            <div class="foto foto2"></div>
+            <div class="yazi">GPS</div>
+        </div>
+        <div class="item">
+            <div class="foto foto3"></div>
+            <div class="yazi">
+                TƏHLÜKƏSİZLİYƏ ZƏMANƏT</div>
+        </div>
     </div>
-    <p class="w3-wide">Gec Yatmaq</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Imeklemek</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">Danismaq</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:40%"></div>
-    </div>
-    <p class="w3-wide">Aglamaq</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:99%"></div>
-    </div>
-    <p class="w3-wide">Yerimek</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
-    </div><br>
-    
-
-    <!-- End Grid/Pricing tables -->
-    </div>
-    
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Menim Valideynlerim</h3>
-    <img src="Hebib2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px" id="hhbb" >
-    <p><span class="w3-large w3-margin-right">Habib Aliyev.</span></p><br>
-    <br><br>
-    
-    <img src="queen.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px" id="mrs">
-    <p><span class="w3-large w3-margin-right">Mrs Aliyeva.</span></p>
    
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Menim Sekillerim</h2>
-    <hr style="width:290px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 50px">
-      <div class="w3-half">
-        <img class="imgall" src="zeyd3.jpg" style="width:100%">
-        <img class="imgall"  src="zeyd4.jpg" style="width:100%">
-        <img class="imgall"  src="zey5.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img class="imgall"  src="zeyd6.jpg" style="width:100%">
-        <!-- <img src="zeyd7.jpg" style="width:100%"> -->
-        <img class="imgall"  src="zeyd8.jpg" style="width:100%" height="470px">
-        <img class="imgall"  src="zeyd9.jpg" style="width:100%" height="454px">
-      </div>
-      
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Menimle Elaqe</h2>
-    <hr style="width:260px" class="w3-opacity">
-
-    <div class="w3-section">
-      <a class="unvan" href=""><p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Baki seheri, Yasamal rayonu</p></a>
-      <a class="tel" href="tel:+994708828989"><p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +994 070 882 89 89</p></a>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: zeydaliyev77@gmail.com</p>
-    </div><br>
-    <p>
-      Gəlin əlaqə saxlayaq. Mənə mesaj göndər:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Ad" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Movzu" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mektub" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> Mektubu Gonder
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
-
+       
 </body>
 </html>
