@@ -15,7 +15,7 @@ html, body {
     background-position: center;
 }
 
-img {
+.truck {
     width: 100%;
     height: auto;
 }
@@ -247,17 +247,8 @@ span {
         align-items: center;
     }
 
-
-     .fixed-top {
-        position: fixed;
-        top: 0;
+    .truck {
+        height: 620px;
     }
 
-    img {
-        width: 550px;
-       height: 700px;
-       background-size: contain;
-       background-position: center;
-        
-    }
 }
