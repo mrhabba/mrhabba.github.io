@@ -1,0 +1,145 @@
+ .iane {
+    margin-left: 900px;
+    --color:#0B5ED7;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+ }
+
+   
+   .iane::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .iane::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .iane::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .iane:hover::before, .iane:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .iane:hover {
+    color: white;
+   }
+   
+   .iane:active {
+    filter: brightness(.8);
+   }
+
+   .umid {
+    margin: 0 180px;
+    color: darkred;
+}
+
+.sekil2 {
+    height: 450px;
+    filter: brightness(0.5);
+    transition: all 1s;
+}
+
+
+.sekil2:hover {
+    filter: brightness(1);
+}
+
+
+.clearfix p {
+    text-align: justify;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.destek {
+    margin: 0 300px;
+}
+
+.logo {
+    height: 50px;
+    width: 100px;
+}
+
+.cardsekil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #4C2D5E;
+    margin-top: 20px;
+   
+}
+
+.cardsekil .card img{
+    filter: brightness(0.8);
+    transform: scale();
+    transition: all 0.5s;
+}
+
+.cardsekil .card img:hover {
+    filter: brightness(1);
+    transform: scale(0.98);
+    
+}
+
+   @media (max-width: 700px) {
+    .iane {
+        margin-left: 50px;
+    }
+
+    .umid {
+        display: inline;
+        color: darkred;
+        text-align: center;
+    }
+
+    .sekil2 {
+        width: 100%;
+    }
+    
+    .destek {
+        /* margin: 0 200px; */
+        margin: 0 40%;
+    }
+
+    .cardsekil {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    
+   }
+
+   @media (max-width: 575px) {
+    .iane {
+        margin-left: 100px;
+    }
+    
+   }
