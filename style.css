@@ -149,9 +149,28 @@ span {
     background-image: url(./inst.ico);
 }
 
+#unvan {
+    scroll-margin-top:  120px;
+}
+
+#foto {
+    scroll-margin-top: 150px;
+}
+
+#zekat {
+    scroll-margin-top: 100px;
+}
+
+
    @media (max-width: 700px) {
     .iane {
         margin-left: 50px;
+    }
+
+    #xerite {
+        height: 500px;
+        width: 470px;
+
     }
 
     .umid {
@@ -181,7 +200,6 @@ span {
 
    @media (max-width: 575px) {
     .iane {
-        margin-left: 50px;
+        margin-left: 150px;
     }
-    
    }
