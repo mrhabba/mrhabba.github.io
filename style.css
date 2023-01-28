@@ -17,6 +17,11 @@
     z-index: 1;
  }
 
+ .hesab {
+    text-decoration: none;
+    color: white;
+ }
+
    
    .iane::before, .button::after {
     content: '';
