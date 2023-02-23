@@ -1,226 +1,79 @@
- .iane {
-    margin-left: 750px;
-    --color:#0B5ED7;
-    padding: 0.8em 1.7em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: white;
-    z-index: 1;
- }
-
- .hesab {
-    text-decoration: none;
-    color: white;
- }
-
-   
-   .iane::before, .button::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 1s ease;
-   }
-   
-   .iane::before {
-    top: -1em;
-    left: -1em;
-   }
-   
-   .iane::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-   }
-   
-   .iane:hover::before, .iane:hover::after {
-    height: 410px;
-    width: 410px;
-   }
-   
-   .iane:hover {
-    color: white;
-   }
-   
-   .iane:active {
-    filter: brightness(.8);
-   }
-
-   .umid {
-    margin: 0 180px;
-    color: darkred;
+html, body {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
-.sekil2 {
-    height: 450px;
-    filter: brightness(0.5);
-    transition: all 1s;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-
-.sekil2:hover {
-    filter: brightness(1);
-}
-
-
-.clearfix p {
-    text-align: justify;
-    margin: 0 20px;
-    font-weight: bold;
-}
-
-.destek {
-    margin: 0 300px;
-}
-
-.logo {
-    height: 50px;
-    width: 100px;
-}
-
-.cardsekil {
+.head {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    filter: drop-shadow(2px 2px 2px black);
-   
+    align-items: center;
+    justify-content: center;
+    background-color: indigo;
+    height: 100px;
+    color: white;
+    position: sticky;
+    top: 0;
 }
 
-.cardsekil .card img{
-    filter: brightness(0.8);
-    transform: scale();
-    transition: all 0.5s;
-}
-
-.cardsekil .card img:hover {
-    filter: brightness(1);
-    transform: scale(0.98);   
-}
-
-h1 {
-    color: darkred;
-    margin-top: 60px;
-}
-
-/* h2 {
-    margin-top: 50px;
-} */
-
-
-
-.tel {
-    margin-top: 60px;
-}
-
-.ikonlar {
+#esas {
+    height: 300px;
+    width: 600px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    background-color: rgb(153, 7, 7);
+    margin: 15px auto;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
 }
 
-.pfhoto {
-    background-position: center;
-    background-size: contain;
-    height: 50px;
-    width: 50px;
-    margin: 0 4px;
-    transform: scale(1);
-    transition: all 0.2s;
-}
-
-#xerite {
-    width: 100%;
-    height: 500px;
-}
-
-.pfhoto:hover{
-    transform: scale(1.1);
-}
-
-.pfhoto1 {
-    background-image: url(./wp.ico);
-}
-.pfhoto2 {
-    background-image: url(./fcb.ico);
-}
-.pfhoto3 {
-    background-image: url(./inst.ico);
-}
-
-.unvan {
-    scroll-margin-top:  120px;
-    border-bottom: 2px solid black;
-}
-
-.foto {
-    scroll-margin-top: 150px;
-    border-bottom: 2px solid black;
-}
-
-.zekat {
-    scroll-margin-top: 100px;
-    border-bottom: 2px solid black;
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin: 2px 0;
+    font-size: 22px;
 }
 
 
-   @media (max-width: 700px) {
-    .iane {
-        margin-left: 50px;
+
+#boyuk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: indigo;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 660px) {
+    #esas {
+        width: 300px;
     }
 
-    #xerite {
-        height: 300px;
-        width: 330px;
-
+    p {
+        padding: 2px;
+        margin: 0;
     }
 
-    .destek {
-        margin: 75px 0;
+    #boyuk {
+        padding: 0;
+        margin: 0;
     }
 
-    .umid {
-        display: inline;
-        color: darkred;
-        text-align: center;
-    }
 
-    .sekil2 {
-        width: 100%;
-    }
-    
-    .destek {
-        /* margin: 0 200px; */
-        margin: 0 40%;
-    }
+}
 
-    .cardsekil {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    
-   }
-
-   @media (max-width: 575px) {
-    .iane {
-        margin-left: 150px;
-    }
-   }
