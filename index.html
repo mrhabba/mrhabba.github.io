@@ -4,32 +4,231 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Kings</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-        <h1 class=" .container-fluid head">BMI kalkulyator</h1>
-        <p>
-            Bədən kütləsi indeksi (BKİ) aşağıdakı düsturla hesablanır.
-        </p>
-        <p>
-            m - bədən çəkisi (kq), h - boy ölçüsü (m), BKİ = m/h<sup>2</sup>.
-        </p>
-        <p id="boyuk">
-            Ümumdünya Səhiyyə Təşkilatı (ÜST) BKİ-nin 25-ə bərabər və ya yuxarı olmasını artıq çəki. BKİ-nin 30-a bərabər və ya yuxarı olmasını isə piylənmə kimi təyin edir. Dünyada 1,4 milyarddan çox insan artıq çəkilidir və yarım milyarddan çox insan piylənmədən əziyyət çəkir.
-        </p>
-        <div id="esas"></div>
-
-        <div class="footer">
-            <p>
-                Design by Habib Aliyev &copy; 2023
-            </p>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img class="logo" src="umid3.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">AnaSəhifə</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#zeka" class="nav-link">Zəkat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fot" class="nav-link">Fotolar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#unva" class="nav-link">Ünvan</a>
+                  </li>
+                     <li class="nav-item">
+                        <a href="#elaq" class="nav-link">Əlaqə</a>
+                    </li>
+                </ul>
+                <button class="iane"><a class="hesab" href="https://hesab.az/unregistered/#/direct-pay/charity/umudyeri-newquick/parameters">İanə Etmək</a></button>
+              </div>
         </div>
+    </nav>
+    <div class="container" style="margin-top: 90px; padding-bottom: 40px;">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100 img-thumbnail" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="font-size: 50px;">Ümid Yeri uşaq sığınacağı</h5>
+                  <p style="font-weight:bold; font-size: 20px;">Onların sizin dəstəyinizə ehtiyacları var.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100 img-thumbnail" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ümid Yeri uşaq sığınacağı</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100 img-thumbnail" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ümid Yeri uşaq sığınacağı</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="umid">
+            <h2>"Ümid Yeri" uşaq evi.</h2>
+          </div>
+        
+          <div class="clearfix">
+            <img  src="umid2.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 sekil2 img-thumbnail fotolar" alt="...">
+          
+            <p>
+              İstədik, ya istəmədik, xoşumuza gəldi ya gəlmədi fərqi yoxdu, demək olar ki, dünyanın hər bir ölkəsində uşaq evləri var. Dünyanın hər bir ölkəsində övladsız olan, həyatı boyunca övlad sevgisi ilə alışıb-yanan valideynlər də var. Bir tərəfdə də Allahın bu gözəl nemətinə xor baxıb, aparıb öz körpəsini uşaqlar evinə atan vicdansız ata-ana da. Hərçənd ki, bəzi uşaqlar kimsəsizlər evinə hər hansı qəza nəticəsində valideynlərini itirdiyi üçün düşüblər.
+            </p>
+          
+            <p>
+              Onlar böyüyəndən və uşaq evlərini tərk etdikdən sonra nə dövlət, nə də cəmiyyət bu gənclərlə maraqlanmır, başlarına nə gəldiyini heç kəs bilmir. Onların taleyi cəmiyyət üçün nəinki maraqlı olmur, hətta dövlətin müvafiq orqanları da bu gənclərin taleyinə biganə yanaşır. Bu səbəbdən də uşaq evindən çıxan gənclər ya narkotikaya qurşanır, ya da müxtəlif səviyyəli cinayətkar əməllərə meyllənməklə həyatın dibinə yuvarlanırlar. Uşaq evlərində böyumüş qızların taleyi isə daha dəhşətli olur və onlar ya insan alveri ilə məşğul olan cinayətkar dəstələrin ovuna çevrilərək xaricə satılırlar.
+            </p>
+          
+            <p>
+              Bütün bunlara səbəb isə, bizim, bütövlükdə cəmiyyətin bu insanlara biganə yanaşmamızmızdan irəli gəlir.Bu gün heç kəs kimsəsiz uşaqların və gənclərin taleyini düşünmək, həyat kitabını oxumaq istəmir. Mən, bir gənc kimi bütün cəmiyyəti bu məsələyə diqqət yetirməyə çağırıram…
+            </p>
+            <p>
+              Sahəsindən asılı olmayaraq həkimsinizsə uşaqlara çox böyük faydanız toxuna bilər. Belə ki, bir çox hallarda uşaq evləri sakinlərinin stomatoloq və s kimi həkimlərə ehtiyacları yaranır. Siz əgər psixoloqsunuzsa onda uşaqlarla psixoloji söhbətlər edə bilər, ayda bir neçə dəfə onlarla psixoloji testlər həyata keçirə bilərsiniz. Bu uşaqlar söhbətləşməyə , dərdlərini bölüşməyə çox ehtiyac duyurlar. Təbii ki, burada olanlar ən müxtəlif ailələrdən gəliblər və müxtəlif səbəblərdən tərk ediliblər. Belə olan halda onların çox psixoloji travma alıb və bu da sonrakı həyatlarına olduqca mənfi təsir göstərir. Buna görə də onlarla daimi söhbətlər aparmaq, dərdlərinə şərik olmaq və s olduqca vacibdir. 
+            </p>
+            <button type="button" class="btn btn-primary btn-lg destek">Dəstək Olmaq</button>
+          </div>
+          <br><br>
+
+          <div>
+            <h1>
+              <span id="zeka" class="zekat">Zəkat Haqqında</span>
+            </h1>
+          </div>
+          <div  class="my-5 accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button  style="font-size: 40px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Zəkat nədir?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Zəkat İslamın beş sütunundan biridir. Bu, sərvəti təmizləyən və yetkin müsəlmanların üzərinə düşən sədəqə vəzifəsidir..</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button style="font-size: 40px;"  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Mən nə qədər zəkat verməliyəm?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Konkret olaraq desək, sərvətinizin təxminən <strong>2,5</strong> faizini zəkata ödəməlisiniz..</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button style="font-size: 40px;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Zəkat ödəmələri üçün nə etməli?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Əgər illərlə zəkat verməmiş olarsan, hər il üçün zəkatın hesabını çıxarmalı və ona uyğun olaraq ödəməlisən. Aradan uzun illər keçsə də və vacib olduğunu bilsən də, bilməsən də, bu ödənişlər sizin üçün məcburidir.</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h1>
+              <span id="fot" class="foto">Fotolar</span> 
+            </h1>
+          </div>
+          <br>
+
+          <div class="cardsekil">
+            <div class="card" style="width: 18rem;">
+              <img style="height: 215px;" src="3.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Ümid Yeri uşaq evi</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="https://hesab.az/unregistered/#/direct-pay/charity/umudyeri-newquick/parameters" class="btn btn-primary">İndi İanə Verin</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img style="height: 215px;" src="4.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Ümid Yeri uşaq evi</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="https://hesab.az/unregistered/#/direct-pay/charity/umudyeri-newquick/parameters" class="btn btn-primary">İndi İanə Verin</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img style="height: 215px;" src="5.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Ümid Yeri uşaq evi</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="https://hesab.az/unregistered/#/direct-pay/charity/umudyeri-newquick/parameters" class="btn btn-primary">İndi İanə Verin</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img style="height: 215px;" src="6.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Ümid Yeri uşaq evi</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="https://hesab.az/unregistered/#/direct-pay/charity/umudyeri-newquick/parameters" class="btn btn-primary">İndi İanə Verin</a>
+              </div>
+            </div>
+          </div>
+
+
+    <div>
+      <h1>
+        <span id="unva" class="unvan">Ünvan</span>
+      </h1>
+    </div>
+
+    <div>
+      <iframe id="xerite" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4295957309732!2d50.067359015356686!3d40.44362777936198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403061fbf11ba7ab%3A0xb8f1627a7f6d3d2!2zw5xtaWQgeWVyaSB1xZ9hcSBzxLHEn8SxbmFjYcSfxLE!5e0!3m2!1sen!2s!4v1674566494779!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+      <div>
+        <h1>
+          <span id="elaq" class="elaqe">Əlaqə</span>
+        </h1>
+      </div>
+  
+      <div class="tel">
+        <h3>Telefon: (012) 556-19-16</h3>
+        <h3>Mobil: (055) 311-65-30</h3>
+      </div>
+  
+      <div class="ikonlar">
+        <a href="https://wa.me/+994553116530">
+          <abbr title="whatsapp"> <div class="pfhoto pfhoto1"></div></abbr>
+        </a>
+        <a href="https://www.facebook.com/fanpageofficialaziz/">
+          <abbr title="facebook"><div class="pfhoto pfhoto2"></div></abbr>
+        </a>
+        <a href="https://www.instagram.com/umid_yeri_official/?hl=en">
+          <abbr title="instagram"><div class="pfhoto pfhoto3"></div></abbr>
+        </a>
+      </div>
+
+
     
 
-    <script src="bmi.js"></script>
+
+    <div class="navbar bg-dark navbar-dark fixed-bottom">
+        <p class="text-light mx-auto my-auto">Designed by King &copy;2023;</p>
+    </div>
+
+    
 </body>
 </html>
