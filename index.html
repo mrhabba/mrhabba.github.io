@@ -1,167 +1,236 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <title>Logistika</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Project1</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/css/uikit.min.css" />
 </head>
 <body>
+    <div id="reng" class="uk-section-primary uk-preserve-color">
 
-  <div></div>
-    <!-- <div class="header">
-        <div class="logo">
-            <img src="image/logo.jpg" alt="">
+        <div uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: !.uk-section-primary;">
+    
+            <nav class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <div uk-navbar>
+    
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#"><img src="image/umid3.jpg" width="100px"></a></li>
+                            <li>
+                                <a id="ana" href="#">Ana Səhifə</a>
+                                <!-- <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Fotolar</a></li>
+                                        <li><a href="#">Əlaqə</a></li>
+                                        <li><a href="#">Ünvan</a></li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li><a id="foto" href="">Fotoloar</a></li>
+                            <li><a id="elaqe" href="">əlaqə</a></li>
+                            <li><a id="unvan" href="">ünvan</a></li>
+                            <li><a id="zekat" href="#">Zəkat</a></li>
+                        </ul>
+                        
+    
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="header2 ">
-            <a class="btn btn-dark text-light" href="" id="ana">ana səhifə</a>
-            <a class=" btn btn-dark text-light" href="haqqimiz">haqqımızda</a>
-            <a class="btn btn-dark text-light" href="yeni">yeniliklər</a>
-            <a class="btn btn-dark text-light" href="elaqe">əlaqə</a>
-        </div>
-    </div> -->
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
 
-    <img class="truck"  src="image/truck.jpg" alt="">
-
-    <div>
-        <h1>
-            <span>Xidmətlərimiz</span>
-        </h1>
-    </div>
-    <div class="menyu">
-        <div class="qutu">
-            <div class="sekil sekil1"></div>
-            <div class="text">Avropa ölkələrinə xidmət</div>
-        </div>
-        <div class="qutu">
-            <div class="sekil sekil2"></div>
-            <div class="text">Konteynerlər ilə yüklərin daşınması</div> 
-        </div>
-        <div class="qutu">
-            <div class="sekil sekil3"></div>
-            <div class="text">Broker xidməti (Yüklərin rəsmiləşdirilməsi)</div>
-        </div>
-    </div>
-    <div class="menyu">
-        <div class="qutu">
-            <div class="sekil sekil4"></div>
-            <div class="text">Sığortalı CMR ilə yüklərin Daşınması</div>
-        </div>
-        <div class="qutu">
-            <div class="sekil sekil5"></div>
-            <div class="text">Kargo Xidməti</div>
-        </div>
-        <div class="qutu">
-            <div class="sekil sekil6"></div>
-            <div class="text">Avto ehtiyyat Hissələrinin satışı</div>
-        </div>
-    </div>
-
-    <h1>
-        <span>Üstünlüklərimiz</span>
-    </h1>
-
-    <div class="footer">
-        <div class="item">
-            <div class="foto foto1"></div>
-            <div class="yazi">7/24 ƏLAQƏ</div>
-        </div>
-        <div class="item">
-            <div class="foto foto2"></div>
-            <div class="yazi">GPS</div>
-        </div>
-        <div class="item">
-            <div class="foto foto3"></div>
-            <div class="yazi">
-                TƏHLÜKƏSİZLİYƏ ZƏMANƏT</div>
-        </div>
-    </div>
-
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="image/logo.png" alt="">
-            Ölkələr Arası Logistika</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menyu</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Ana Səhifə</a>
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="image/1.jpg" alt="" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Onların sizin yardımlarınıza ehtiyacı var.</h3>
+                        <!-- <p id="one" class="uk-margin-remove">Yetim gülərsə dünya gülər, insanlıq gülər.</p> -->
+                    </div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="yenilik.html">Yenilik</a>
+                <li>
+                    <img src="image/4.jpg" alt="" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Yetim gülərsə dünya gülər, insanlıq gülər.</h3>
+                        <!-- <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                    </div>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Avto Ehtiyyat Hissələrinin Satışı
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="https://tap.az/elanlar?log=true&q%5Bkeywords%5D=mercedes&q%5Bregion_id%5D=">Mercedes</a></li>
-                    <li><a class="dropdown-item" href="https://tap.az/elanlar?order=&q%5Buser_id%5D=&q%5Bcontact_id%5D=&q%5Bprice%5D%5B%5D=&q%5Bprice%5D%5B%5D=&q%5Bregion_id%5D=&q%5Bkeywords%5D=volvo">Volvo</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="https://tap.az/elanlar?order=&q%5Buser_id%5D=&q%5Bcontact_id%5D=&q%5Bprice%5D%5B%5D=&q%5Bprice%5D%5B%5D=&q%5Bregion_id%5D=&q%5Bkeywords%5D=ford">Ford</a></li>
-                  </ul>
+                <li>
+                    <img src="image/5.jpg" alt="" uk-cover>
+                    <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
+                        <h3 id="three" class="uk-margin-remove">Gəlin onları tək qoymayaq.</h3>
+                         <p class="uk-margin-remove">Bizə qoşul.
+                            Onların Dünyasını Dəyişdirin.</p>
+                    </div>
                 </li>
-              </ul>
-              <form action="https://www.google.az/" class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Bura yaz" aria-label="Search">
-                <button class="btn btn-success" type="submit">Axtar</button>
-              </form>
-            </div>
-          </div>
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
         </div>
-      </nav>
-
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="image/gemi.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Yüklərin daşınması</h5>
-              <p>Yüklərin beynəlxalq daşınmasında gündən-günə irəliləyirik .</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image/container.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>DPU Xidməti</h5>
-              <p>Alıcının Ölkəsində Liman / Təyinat Yerində Razılaşdırılmış Terminal.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image/anbar.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Yüklərin paletlənməsi.</h5>
-              <p>Yükün paletlənməsi zamanı bir çox məqamlara diqqət yetirilməlidir.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-   
        
+    </div>
+
+
+
+
+
+    <div class="uk-flex uk-flex-center  uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true">
+        <div>
+            <div class="uk-text-center uk-card uk-card-default uk-card-body">
+                <h3 class="uk-text-bold uk-card-title">Yetimlərin təhsilini, sağlamlığını və təhlükəsizliyini təmin etməklə onların rifahının əsasını qoyaq!</h3>
+                <p>Bizim əsas məqsədimiz kimsəsiz uşaqların üzləşdiyi bütün cari və potensial problemləri həll etməkdir. Təşkilatlar və ictimai dəstək qrupları ilə əməkdaşlıq edərək, biz yetimlərin rifahını təşviq etmək üçün daimi mübarizə ilə çoxsaylı proqramlar təşkil edirik..</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <div class="uk-card-media-left uk-cover-container">
+            <img src="image/umid2.jpg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h3 id="tehsil" class="uk-text-emphasis uk-text-bolder uk-card-title">Təhsil
+                    şöbəmiz</h3>
+                <p> Qeydiyyatdan keçmiş yetimlərə və onların dəstəkləyici icmalarına öz regionlarında təhsil sistemini təkmilləşdirməkdə kömək etmək bizim əsas prioritetimizdir.</p>
+                <button type="button" class="btn btn-primary btn-lg destek" id="zekat">Dəstək Olmaq</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="image/umid5.jpg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h3 id="saglamliq" class="uk-card-title uk-text-bolder ">Sağlamlıq
+                    şöbəmiz</h3>
+                <p>Bu bölmə yetimlərə və onların ailələrinə sağlamlıq və qidalanma xidmətlərinə asan çıxışın təmin edilməsinə yönəlib. Xüsusi strategiyamızla biz yetim uşaqlarda HİV/QİÇS virusuna yoluxma riskini minimuma endirməyə çalışırıq. Səhiyyə sektoru təhsil şöbəsi ilə sıx koordinasiyada çalışaraq, uşaqların karyerasına maksimum dəstək, onların hüquqi və insan hüquqlarının optimal şəkildə qorunmasını, emosional ehtiyaclarının ödənilməsini təmin edir..</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div  class="uk-flex uk-flex-center uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+        <div style="width: 100%;" class="uk-text-center uk-width-xlarge">
+            <div class=" uk-card uk-card-default uk-card-body" uk-scrollspy-class="uk-animation-slide-top">
+                <h3 class="uk-card-title uk-text-bold">“Yetim uşaqlara daha yaxşı təhsil imkanları təqdim edərək, biz onlara əsas və təkmil təhsillərini başa çatdırmaq üçün səlahiyyət veririk”.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <div class="uk-card-media-left uk-cover-container">
+            <img src="image/umid4.jpg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h3 id="tehluke" class="uk-text-emphasis uk-text-bolder uk-card-title">Təhlükəsizlik
+                    şöbəmiz</h3>
+                <p>Təhlükəsizlik bölməmiz yetimlərin təhlükəsizliyini və rifahını təmin etmək üçün gecə-gündüz işləyir. Bu bölmə övladlığa götürmə imkanlarının təklif edilməsinə, övladlığa götürmə prosesinin asanlaşdırılmasına, psixososial qiymətləndirmələrin aparılmasına və tərbiyə mühitlərində uşaqların monitorinqi üçün müdaxilələrdən istifadəyə diqqət yetirir..</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="image/3.jpg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h3 id="strateg" class="uk-card-title uk-text-bolder ">Strategiyamız</h3>
+                <p>Yetim uşaqlara layiq olduqları sığınacaq və məhəbbəti bəxş etmək üçün bizim istedadlı təşkilat üzvlərimiz və tərəfdaşlarımız geniş spektrli xidmətlər təqdim etmək üçün sıx harmoniya ilə birlikdə çalışırlar. Biz ailələri təşviq edirik və icmaları kimsəsiz uşaqların, o cümlədən onların tərbiyəsi, sağlamlığı və təhsili ilə bağlı unikal ehtiyaclarını ödəməyə təşviq edirik.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div  class="uk-flex uk-flex-center uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+        <div style="width: 100%;" class="uk-text-center uk-width-xlarge">
+            <div class=" uk-card uk-card-default uk-card-body" uk-scrollspy-class="uk-animation-slide-top">
+                <h3 class="uk-card-title uk-text-bold">"Bu illər ərzində layihələrimiz ehtiyacı olan yüzlərlə və minlərlə yetim uşağa kömək edib, eyni zamanda bütün cəmiyyətin yenidən qurulması və yenidən qurulmasını təşviq edib."</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <div class="uk-card-media-left uk-cover-container">
+            <img src="image/umid2.jpg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h3 id="layihe" class="uk-text-emphasis uk-text-bolder uk-card-title">Layihələrimiz</h3>
+                <p>Layihələrimizin əksəriyyəti əsas məqsədlərimizlə mükəmməl uyğunlaşır. Biz səhiyyə, rifah və təhsil sənayelərinə aid olan təşkilatlar, bizneslər və dəstək qrupları ilə qarşılıqlı faydalı əlaqələr qurmağa və davam etdirməyə çalışırıq. Layihələrimiz yetim uşağın rifahına və parlaq gələcəyinə mane ola biləcək bütün maneələrə tab gətirməyə yönəldilmişdir. Əsas pəhriz tələblərindən tutmuş səhiyyə ehtiyaclarına və bunların arasında olan hər şeyə qədər biz bədbəxt cəmiyyətin qayğısına qalırıq! Bütün sahələrdə geniş dəstək səviyyəsi ilə biz yetim uşaqların həyatına konkret, nəzərəçarpacaq və əlverişli təsir göstərmək üçün inkişaf edirik.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="image/umid5.jpg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h3 id="tecrube" class="uk-card-title uk-text-bolder ">Bizim təcrübəmiz</h3>
+                <p>Məqsədimizə çatmaq üçün biz sağlamlıq, təhlükəsizlik və təhsil proqramları həyata keçiririk. Biz bu proqramların nəticələrini və onlardan öyrənilmiş dərsləri tərəfdaşlarımızla bölüşürük və gələcəkdə göstərilən xidmətin səviyyəsini artırmaq üçün icmalara dəstək veririk. Yetim qayğısı kimsənin hər şeyi etməsi deyil, hər kəsin bir şey etməsidir. Biz birlikdə hər şeyi mümkün edirik!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div  class="uk-flex uk-flex-center uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+        <div style="width: 100%;" class="uk-text-center uk-width-xlarge">
+            <div class=" uk-card uk-card-default uk-card-body" uk-scrollspy-class="uk-animation-slide-top">
+                <h3 class="uk-card-title uk-text-bold">"Sevgi və dəstək aclığını yerinə yetirmək yemək aclığından qat-qat çətindir"</h3>
+                <p>Yetim uşaqların gündəlik olaraq qarşılaşdıqları çətinliklər onların şəxsiyyətini formalaşdırır. Bu səbəbdən biz onlara daha yaxşı gələcək təmin etməyə diqqət yetiririk. Bir təşkilat olaraq inkişaf etməyə davam etmək üçün biz keçmişdə və indidə qalmırıq. Yetimlərin problemlərini davamlı olaraq müəyyən edərək və anlayaraq, hər gün daha yaxşı nəticələr əldə etmək üçün strategiyalarımızı yenidən formalaşdırırıq. İnanırıq ki, yetimlərə veriləcək maddi yardımdan daha çox şey var.
+
+                    Hər birimizin səpdiyi kiçik bir toxum gözəl bir bağ yarada bilər. Yetim uşaqlara və onların ailələrinə dəstək olmaq üçün əl-ələ verək..</p>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+    <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=umid%20yeri+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a></iframe></div>
+
+
+
+    <a class="uk-button uk-button-primary" href="#target" uk-scroll>Yuxariya qayit</a>
+    
+
+
+
+
+
+
+
+
+
+    <script src="Js/project1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit-icons.min.js"></script>
 </body>
 </html>
